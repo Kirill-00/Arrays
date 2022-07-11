@@ -1,4 +1,4 @@
-#include<iostream>
+п»ї#include<iostream>
 using namespace std;
 //#define DZ
 //#define YR_V1
@@ -11,25 +11,25 @@ void main()
 #ifdef DZ
 	const int n = 10;
 	int arr[n], arr2[n];
-	//заполняем массив случайными числами
+	//Р·Р°РїРѕР»РЅСЏРµРј РјР°СЃСЃРёРІ СЃР»СѓС‡Р°Р№РЅС‹РјРё С‡РёСЃР»Р°РјРё
 	srand(time(NULL));
 	for (int i = 0; i < n; i++)
 	{
 		arr[i] = rand() % 5;
 		arr2[i] = 0;
 	}
-	//вывод исходного масива
+	//РІС‹РІРѕРґ РёСЃС…РѕРґРЅРѕРіРѕ РјР°СЃРёРІР°
 	for (int i = 0; i < n; i++)
 	{
 		cout << arr[i] << tab;
 	}
 	cout << endl;
-	//проверка
+	//РїСЂРѕРІРµСЂРєР°
 	for (int i = 0; i < n; i++)
 	{
 		arr2[arr[i]] += 1;
 	}
-	//вывод
+	//РІС‹РІРѕРґ
 	for (int j = 0; j < 5; j++)
 	{
 		if (arr2[j])
@@ -52,7 +52,7 @@ void main()
 	cout << endl;
 	for (int i = 0; i < n; i++)
 	{
-		int count = 0;//cчотчик повторений
+		int count = 0;//cС‡РѕС‚С‡РёРє РїРѕРІС‚РѕСЂРµРЅРёР№
 		for (int j = i + 1; j < n; j++)
 		{
 			if (arr[i] == arr[j])
@@ -60,7 +60,7 @@ void main()
 				count++;
 			}
 		}
-		if (count > 0)cout << arr[i] << " повторяется " << count << " раз\n";
+		if (count > 0)cout << arr[i] << " РїРѕРІС‚РѕСЂСЏРµС‚СЃСЏ " << count << " СЂР°Р·\n";
 	}
 #endif YR_V1
 #ifdef never_defore
@@ -77,7 +77,7 @@ void main()
 	cout << endl;
 	for (int i = 0; i < n; i++)
 	{
-		bool never_defore = true;//предполагаем что текущее значение ранее не встречалось,но это нужно проверить
+		bool never_defore = true;//РїСЂРµРґРїРѕР»Р°РіР°РµРј С‡С‚Рѕ С‚РµРєСѓС‰РµРµ Р·РЅР°С‡РµРЅРёРµ СЂР°РЅРµРµ РЅРµ РІСЃС‚СЂРµС‡Р°Р»РѕСЃСЊ,РЅРѕ СЌС‚Рѕ РЅСѓР¶РЅРѕ РїСЂРѕРІРµСЂРёС‚СЊ
 		for (int j = 0; j < i; j++)
 		{
 			if (arr[i] == arr[j])
@@ -88,7 +88,7 @@ void main()
 		}
 		if (never_defore)
 		{
-			int count = 0;//cчетчик повторений
+			int count = 0;//cС‡РµС‚С‡РёРє РїРѕРІС‚РѕСЂРµРЅРёР№
 			for (int j = i + 1; j < n; j++)
 			{
 				if (arr[i] == arr[j])
@@ -96,7 +96,7 @@ void main()
 					count++;
 				}
 			}
-			if (count > 0)cout << arr[i] << " повторяется " << count << " раз\n";
+			if (count > 0)cout << arr[i] << " РїРѕРІС‚РѕСЂСЏРµС‚СЃСЏ " << count << " СЂР°Р·\n";
 		}
 	}
 #endif never_defore
@@ -128,6 +128,6 @@ void main()
 		{
 			if (arr[i] == arr[j])count++;
 		}
-		if (count > 0)cout << arr[i] << " повторяется " << count << " раз\n";
+		if (count > 0)cout << arr[i] << " РїРѕРІС‚РѕСЂСЏРµС‚СЃСЏ " << count << " СЂР°Р·\n";
 	}
 }

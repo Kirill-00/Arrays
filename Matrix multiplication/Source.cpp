@@ -1,4 +1,4 @@
-#include<iostream>
+п»ї#include<iostream>
 using namespace std;
 
 #define tab "\t"
@@ -10,7 +10,7 @@ void main()
 	const int COLS = 3;
 	int A[ROWS][COLS];
 	int B[ROWS][COLS];
-	//Заполдняем матрицу случайными числами
+	//Р—Р°РїРѕР»РґРЅСЏРµРј РјР°С‚СЂРёС†Сѓ СЃР»СѓС‡Р°Р№РЅС‹РјРё С‡РёСЃР»Р°РјРё
 	for (int i = 0; i < ROWS; i++)
 	{
 		for (int j = 0; j < COLS; j++)
@@ -19,7 +19,7 @@ void main()
 			B[i][j] = rand() % 10;
 		}
 	}
-	//Выводим матрици на экран:
+	//Р’С‹РІРѕРґРёРј РјР°С‚СЂРёС†Рё РЅР° СЌРєСЂР°РЅ:
 	for (int i = 0; i < ROWS; i++)
 	{
 		for (int j = 0; j < COLS; j++)
@@ -37,7 +37,7 @@ void main()
 		}
 		cout << endl;
 	}
-	int C[ROWS][COLS]{};//Матрица результат
+	int C[ROWS][COLS]{};//РњР°С‚СЂРёС†Р° СЂРµР·СѓР»СЊС‚Р°С‚
 	for (int i = 0; i < ROWS; i++)
 	{
 		for (int j = 0; j < 3; j++)

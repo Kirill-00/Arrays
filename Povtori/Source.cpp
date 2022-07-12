@@ -3,6 +3,7 @@ using namespace std;
 //#define DZ
 //#define YR_V1
 //#define never_defore
+//#define DEBUG
 #define tab "\t"
 
 void main()
@@ -100,6 +101,7 @@ void main()
 		}
 	}
 #endif never_defore
+#ifdef DEBUG
 	const int n = 10;
 	int arr[n] = {};
 	for (int i = 0; i < n; i++)
@@ -130,4 +132,5 @@ void main()
 		}
 		if (count > 0)cout << arr[i] << " повторяется " << count << " раз\n";
 	}
+#endif DEBUG
 }

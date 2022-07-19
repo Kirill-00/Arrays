@@ -3,8 +3,8 @@
 using namespace std;
 
 #define tab "\t"
-//#define UNIQUE_1
-#define UNIQUE_2
+#define UNIQUE_1
+//#define UNIQUE_2
 
 void main()
 {
@@ -19,7 +19,7 @@ void main()
 		do
 		{
 			arr[i] = rand() % n;
-			unique = true;//предволагает что сгенерировалось униепльное случайное число
+			unique = true;//предволагает что сгенерировалось уникальное случайное число
 			//но это нужно проверить:
 			for (int j = 0; j < i; j++)
 			{

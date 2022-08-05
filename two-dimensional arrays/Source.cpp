@@ -1,4 +1,4 @@
-#include<iostream>
+п»ї#include<iostream>
 using namespace std;
 
 //#define SORT
@@ -14,7 +14,7 @@ void main()
 	const int ROWS = 4;
 	const int COLS = 4;
 	int arr[ROWS][COLS];
-	//Заполнение матрицы случайными числами
+	//Р—Р°РїРѕР»РЅРµРЅРёРµ РјР°С‚СЂРёС†С‹ СЃР»СѓС‡Р°Р№РЅС‹РјРё С‡РёСЃР»Р°РјРё
 	for (int i = 0; i < ROWS; i++)
 	{
 		for (int j = 0; j < COLS; j++)
@@ -22,8 +22,8 @@ void main()
 			arr[i][j] = rand() % 15;
 		}
 	}
-	//Вывод исходной матрицы на экран
-	cout << "Массив до сортировки:" << endl;
+	//Р’С‹РІРѕРґ РёСЃС…РѕРґРЅРѕР№ РјР°С‚СЂРёС†С‹ РЅР° СЌРєСЂР°РЅ
+	cout << "РњР°СЃСЃРёРІ РґРѕ СЃРѕСЂС‚РёСЂРѕРІРєРё:" << endl;
 	for (int i = 0; i < ROWS; i++)
 	{
 		for (int j = 0; j < COLS; j++)
@@ -34,9 +34,9 @@ void main()
 	}
 	cout << endl;
 	int buffer;
-	for (int l = 0; l <= (ROWS * COLS); l++)//колличество проходов
+	for (int l = 0; l <= (ROWS * COLS); l++)//РєРѕР»Р»РёС‡РµСЃС‚РІРѕ РїСЂРѕС…РѕРґРѕРІ
 	{
-		//в строках упорядочиваем
+		//РІ СЃС‚СЂРѕРєР°С… СѓРїРѕСЂСЏРґРѕС‡РёРІР°РµРј
 		for (int i = 0; i < ROWS; i++)
 		{
 			for (int j = 0; j < COLS - 1; j++)
@@ -49,7 +49,7 @@ void main()
 				}
 			}
 		}
-		//в столбах упорядочиваем
+		//РІ СЃС‚РѕР»Р±Р°С… СѓРїРѕСЂСЏРґРѕС‡РёРІР°РµРј
 		for (int x = 0; x < COLS; x++)
 		{
 			for (int z = 0; z < ROWS - 1; z++)
@@ -63,7 +63,7 @@ void main()
 			}
 }
 	 }
-	cout << "Массив после сортировки:" << endl;
+	cout << "РњР°СЃСЃРёРІ РїРѕСЃР»Рµ СЃРѕСЂС‚РёСЂРѕРІРєРё:" << endl;
 	for (int i = 0; i < ROWS; i++)
 	{
 		for (int j = 0; j < COLS; j++)
@@ -115,7 +115,7 @@ void main()
 	const int ROWS = 4;
 	const int COLS = 4;
 	int arr[ROWS][COLS];
-	//Заполнение матрицы случайными числами
+	//Р—Р°РїРѕР»РЅРµРЅРёРµ РјР°С‚СЂРёС†С‹ СЃР»СѓС‡Р°Р№РЅС‹РјРё С‡РёСЃР»Р°РјРё
 	for (int i = 0; i < ROWS; i++)
 	{
 		for (int j = 0; j < COLS; j++)
@@ -123,7 +123,7 @@ void main()
 			arr[i][j] = rand() % 5;
 		}
 	}
-	//Вывод исходной матрицы на экран
+	//Р’С‹РІРѕРґ РёСЃС…РѕРґРЅРѕР№ РјР°С‚СЂРёС†С‹ РЅР° СЌРєСЂР°РЅ
 	for (int i = 0; i < ROWS; i++)
 	{
 		for (int j = 0; j < COLS; j++)
@@ -133,7 +133,7 @@ void main()
 		cout << endl;
 	}
 	cout << endl;
-	int count = 0;//cчотчик повторений
+	int count = 0;//cС‡РѕС‚С‡РёРє РїРѕРІС‚РѕСЂРµРЅРёР№
 	for (int i = 0; i <= ROWS - 1; i++)
 	{
 		for (int j = 0; j <= COLS - 1; j++)
@@ -162,7 +162,7 @@ void main()
 					}
 				}
 			}
-			if (count > 0)cout << arr[i][j] << " повторяется " << count << " раз\n";
+			if (count > 0)cout << arr[i][j] << " РїРѕРІС‚РѕСЂСЏРµС‚СЃСЏ " << count << " СЂР°Р·\n";
 		}
 	}
 #endif POVTORI
